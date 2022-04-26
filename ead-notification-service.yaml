@@ -6,12 +6,7 @@ server:
 spring:
   application:
     name: ead-notification-service
-  config:
-    import: 'optional:configserver:'
-  cloud:
-    config:
-      discovery:
-        serviceId: ead-config-server
+
   datasource:
     url:  jdbc:postgresql://localhost:5432/ead-notification-v2
     username: postgres
@@ -50,7 +45,6 @@ logging:
 
 # insert broker properties
 
-
 management:
   endpoints:
     web:
@@ -58,10 +52,3 @@ management:
         include:
           - refresh
           - health
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: 'http://localhost:8761/eureka'
-  instance:
-    hostname: localhost
