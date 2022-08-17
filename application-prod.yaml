@@ -3,7 +3,7 @@ ead:
     username: serviceregistryclientprod
     password: '{cipher}02b3372fd9d41d136cfaf4c9c53928a2073fb79e0e9e680b575ebad12d409ae1'
   auth:
-    jwt-secret: '{cipher}B?E(H+MbQeShVmYq3t6w9z$C&F)J@NcRfUjWnZr4u7x!A%D*G-KaPdSgVkYp2s5v'
+    jwt-secret: '{cipher}G+KbPeShVmYq3t6w9z$C&F)H@McQfTjWnZr4u7x!A%D*G-KaNdRgUkXp2s5v8y/B'
     jwt-expiration-ms: 7200000
 eureka:
   client:
