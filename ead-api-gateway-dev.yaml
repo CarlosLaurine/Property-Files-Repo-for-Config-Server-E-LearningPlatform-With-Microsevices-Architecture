@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: authuser-service
+          uri: lb://ead-authuser-service
+          predicates:
+            - Path=/ead-authuser/**
+        - id: course-service
+          uri: lb://ead-course-service
+          predicates:
+            - Path=/ead-course/**
+        - id: notification-service
+          uri: lb://ead-notification-service
+          predicates:
+            - Path=/ead-notification/**
+  application:
+    name: ead-api-gateway
